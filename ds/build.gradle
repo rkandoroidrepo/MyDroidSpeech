@@ -44,3 +44,9 @@ artifacts {
     archives sourcesJar
     archives javadocJar
 }
+
+
+dependencies {
+    compile 'me.xdrop:fuzzywuzzy:1.2.0'
+
+}

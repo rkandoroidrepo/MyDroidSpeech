@@ -1,4 +1,4 @@
-#Sun Nov 05 15:26:55 IST 2017
-base.0=/Users/vikram/Documents/Development/Libraries/Vikram/DroidSpeech/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sat Apr 18 18:58:46 IST 2020
+base.0=C\:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=/Users/vikram/Documents/Development/Libraries/Vikram/DroidSpeech/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=C\:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

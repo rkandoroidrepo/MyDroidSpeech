@@ -25,7 +25,12 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+
+import me.xdrop.fuzzywuzzy.FuzzySearch;
+
 
 /**
  * Droid Speech
@@ -42,7 +47,7 @@ public class DroidSpeech
     private RecognitionProgressView recognitionProgressView;
     private TextView recognitionProgressMsg;
     private LinearLayout confirmLayout;
-    private Button confirm, retry;
+    public Button confirm, retry;
     private DroidSpeechPermissions droidSpeechPermissions;
     private SpeechRecognizer droidSpeechRecognizer;
     private Intent speechIntent;
@@ -53,6 +58,17 @@ public class DroidSpeech
     private OnDSListener droidSpeechListener;
 
     // MARK: Constructor
+
+    private String[] commands = {"show me today's data",
+            "show me yesterday's data",
+            "display today's data",
+            "display yesterday's data",
+            "show me last month data",
+            "show me last week data",
+            "display last month data",
+            "display last week data"};
+
+    private HashMap<Integer, String> hashMap = new HashMap<>();
 
     /**
      * Droid Speech Constructor
@@ -194,7 +210,7 @@ public class DroidSpeech
                         if(dsProperties.continuousSpeechRecognition)
                         {
                             // Start droid speech recognition again
-                            startDroidSpeechRecognition();
+                           // startDroidSpeechRecognition();
                         }
                         else
                         {
@@ -732,10 +748,35 @@ public class DroidSpeech
 
                                 // Showing the confirm result layout
                                 confirmLayout.setVisibility(View.VISIBLE);
+                                hashMap.clear();
+                                final int length = commands.length;
+                                final int[] ratio = new int[length];
+                                for (int i = 0; i < length; i++) {
+                                    String command = commands[i];
+                                    ratio[i] = FuzzySearch.ratio(droidSpeechFinalResult, command);
+                                    hashMap.put(ratio[i], command);
+                                }
 
-                                // Closing droid speech operations, will be restarted when user clicks
-                                // cancel or confirm if applicable
+                                Arrays.sort(ratio);
+                                System.out.println("LOG:-ratio-"+ratio[length-1]+"--"+hashMap.get(ratio[length-1]));
+
+                                 //Closing droid speech operations, will be restarted when user clicks
+                                 //cancel or confirm if applicable
+                                dsProperties.oneStepVerifySpeechResult = hashMap.get(ratio[length-1]);
                                 closeDroidSpeech();
+
+                                Handler handler = new Handler();
+                                handler.postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        if(ratio[length-1]>75) {
+                                            confirm.performClick();
+                                        }else {
+                                            dsProperties.oneStepVerifySpeechResult = "Command not found";
+                                            retry.performClick();
+                                        }
+                                    }
+                                }, 2000);
                             }
                             else
                             {
@@ -767,6 +808,8 @@ public class DroidSpeech
                             restartDroidSpeechRecognition();
                         }
                     }
+
+
 
                     @SuppressWarnings("ConstantConditions")
                     @Override
