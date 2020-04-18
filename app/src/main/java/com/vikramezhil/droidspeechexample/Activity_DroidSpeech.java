@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,8 +16,7 @@ import com.vikramezhil.droidspeech.DroidSpeech;
 import com.vikramezhil.droidspeech.OnDSListener;
 import com.vikramezhil.droidspeech.OnDSPermissionsListener;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -33,6 +33,8 @@ public class Activity_DroidSpeech extends Activity implements OnClickListener, O
     private DroidSpeech droidSpeech;
     private TextView finalSpeechResult;
     private Speakerbox speakerbox;
+    private ChatMessageAdapter mAdapter;
+    private ListView mListView;
 
     // MARK: Activity Methods
     private ImageView start, stop;
@@ -42,10 +44,10 @@ public class Activity_DroidSpeech extends Activity implements OnClickListener, O
         super.onCreate(savedInstanceState);
 
         // Setting the layout;[.
-        setContentView(R.layout.activity_droid_speech);
+        setContentView(R.layout.activity_main);
         speakerbox = new Speakerbox(getApplication());
         // Initializing the droid speech and setting the listener
-        droidSpeech = new DroidSpeech(this, getFragmentManager());
+        droidSpeech = new DroidSpeech(this, getFragmentManager(), R.id.container);
         droidSpeech.setOnDroidSpeechListener(this);
         droidSpeech.setShowRecognitionProgressView(true);
         droidSpeech.setOneStepResultVerify(true);
@@ -53,13 +55,17 @@ public class Activity_DroidSpeech extends Activity implements OnClickListener, O
         droidSpeech.setOneStepVerifyConfirmTextColor(Color.WHITE);
         droidSpeech.setOneStepVerifyRetryTextColor(Color.WHITE);
 
-        finalSpeechResult = findViewById(R.id.finalSpeechResult);
+        //finalSpeechResult = findViewById(R.id.finalSpeechResult);
 
         start = findViewById(R.id.start);
         start.setOnClickListener(this);
 
         stop = findViewById(R.id.stop);
         stop.setOnClickListener(this);
+
+        mListView = findViewById(R.id.listView);
+        mAdapter = new ChatMessageAdapter(this, new ArrayList<ChatMessage>(), getApplication());
+        mListView.setAdapter(mAdapter);
     }
 
     @Override
@@ -138,8 +144,8 @@ public class Activity_DroidSpeech extends Activity implements OnClickListener, O
     @Override
     public void onDroidSpeechFinalResult(String finalSpeechResult) {
         // Setting the final speech result
-        data = data + finalSpeechResult + "\n";
-        this.finalSpeechResult.setText(data);
+        //data = data + finalSpeechResult + "\n";
+        //this.finalSpeechResult.setText(data);
 
         if (droidSpeech.getContinuousSpeechRecognition()) {
             int[] colorPallets1 = new int[]{Color.RED, Color.GREEN, Color.BLUE, Color.CYAN, Color.MAGENTA};
@@ -152,7 +158,12 @@ public class Activity_DroidSpeech extends Activity implements OnClickListener, O
             start.setVisibility(View.VISIBLE);
         }
 
-      answer(finalSpeechResult);
+        mListView.setSelection(mAdapter.getCount() - 1);
+        ChatMessage chatMessage = new ChatMessage(finalSpeechResult, true, false);
+        mAdapter.add(chatMessage);
+        mListView.setSelection(mAdapter.getCount() - 1);
+        answer(finalSpeechResult);
+
     }
 
     private void answer(String command){
@@ -168,8 +179,10 @@ public class Activity_DroidSpeech extends Activity implements OnClickListener, O
                 droidSpeech.startDroidSpeechRecognition();
             }
         }, null);
-        data = data+ answer;
-        this.finalSpeechResult.setText(data);
+
+        ChatMessage chatMessage = new ChatMessage(answer, false, false);
+        mAdapter.add(chatMessage);
+        mListView.setSelection(mAdapter.getCount() - 1);
     }
 
 

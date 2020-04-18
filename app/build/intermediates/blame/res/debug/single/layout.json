@@ -20,6 +20,10 @@
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_mine_message.xml",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\layout\\item_mine_message.xml"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
@@ -150,6 +158,10 @@
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_other_message.xml",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\layout\\item_other_message.xml"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",

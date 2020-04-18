@@ -72,13 +72,12 @@ public class DroidSpeech
 
     /**
      * Droid Speech Constructor
-     *
-     * @param context The application context instance
+     *  @param context The application context instance
      *
      * @param fragmentManager The fragment manager instance (Pass this "null" if Droid Speech doesn't
-     *                        want to handle permissions)
+     * @param container
      */
-    public DroidSpeech(Context context, FragmentManager fragmentManager)
+    public DroidSpeech(Context context, FragmentManager fragmentManager, int container)
     {
         this.context = context;
         dsProperties.listeningMsg = context.getResources().getString(R.string.ds_listening);
@@ -87,7 +86,7 @@ public class DroidSpeech
         {
             // Initializing the Non-UI droid speech fragment and beginning transaction
             droidSpeechPermissions = new DroidSpeechPermissions();
-            fragmentManager.beginTransaction().add(droidSpeechPermissions, TAG).commit();
+            fragmentManager.beginTransaction().add(container, droidSpeechPermissions, TAG).commit();
         }
 
         // Initializing the recognition progress view
@@ -210,7 +209,8 @@ public class DroidSpeech
                         if(dsProperties.continuousSpeechRecognition)
                         {
                             // Start droid speech recognition again
-                           // startDroidSpeechRecognition();
+                            //startDroidSpeechRecognition();
+                            confirmLayout.setVisibility(View.GONE);
                         }
                         else
                         {
@@ -745,38 +745,41 @@ public class DroidSpeech
                             {
                                 // Saving the speech result
                                 dsProperties.oneStepVerifySpeechResult = droidSpeechFinalResult;
-
-                                // Showing the confirm result layout
-                                confirmLayout.setVisibility(View.VISIBLE);
-                                hashMap.clear();
-                                final int length = commands.length;
-                                final int[] ratio = new int[length];
-                                for (int i = 0; i < length; i++) {
-                                    String command = commands[i];
-                                    ratio[i] = FuzzySearch.ratio(droidSpeechFinalResult, command);
-                                    hashMap.put(ratio[i], command);
-                                }
-
-                                Arrays.sort(ratio);
-                                System.out.println("LOG:-ratio-"+ratio[length-1]+"--"+hashMap.get(ratio[length-1]));
-
-                                 //Closing droid speech operations, will be restarted when user clicks
-                                 //cancel or confirm if applicable
-                                dsProperties.oneStepVerifySpeechResult = hashMap.get(ratio[length-1]);
-                                closeDroidSpeech();
-
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        if(ratio[length-1]>75) {
-                                            confirm.performClick();
-                                        }else {
-                                            dsProperties.oneStepVerifySpeechResult = "Command not found";
-                                            retry.performClick();
-                                        }
+                                if(droidSpeechFinalResult.contains("shutdown")||droidSpeechFinalResult.contains("stop")){
+                                    closeDroidSpeechOperations();
+                                }else {
+                                    // Showing the confirm result layout
+                                    confirmLayout.setVisibility(View.VISIBLE);
+                                    hashMap.clear();
+                                    final int length = commands.length;
+                                    final int[] ratio = new int[length];
+                                    for (int i = 0; i < length; i++) {
+                                        String command = commands[i];
+                                        ratio[i] = FuzzySearch.ratio(droidSpeechFinalResult, command);
+                                        hashMap.put(ratio[i], command);
                                     }
-                                }, 2000);
+
+                                    Arrays.sort(ratio);
+                                    System.out.println("LOG:-ratio-" + ratio[length - 1] + "--" + hashMap.get(ratio[length - 1]));
+
+                                    //Closing droid speech operations, will be restarted when user clicks
+                                    //cancel or confirm if applicable
+                                    dsProperties.oneStepVerifySpeechResult = hashMap.get(ratio[length - 1]);
+                                    closeDroidSpeech();
+
+                                    Handler handler = new Handler();
+                                    handler.postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if (ratio[length - 1] > 75) {
+                                                confirm.performClick();
+                                            } else {
+                                                dsProperties.oneStepVerifySpeechResult = "Command not found";
+                                                retry.performClick();
+                                            }
+                                        }
+                                    }, 2000);
+                                }
                             }
                             else
                             {
@@ -862,6 +865,7 @@ public class DroidSpeech
                                             // Closing droid speech operations, will be restarted when user clicks
                                             // cancel or confirm if applicable
                                             closeDroidSpeech();
+                                            retry.performClick();
                                         }
                                         else
                                         {

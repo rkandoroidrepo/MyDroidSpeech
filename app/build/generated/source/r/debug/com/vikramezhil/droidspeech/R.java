@@ -14,14 +14,14 @@ public final class R {
         public static final int progressMsgMargin = 0x7f070045;
     }
     public static final class id {
-        public static final int confirm = 0x7f0d0062;
-        public static final int confirmLayout = 0x7f0d0061;
-        public static final int recognitionProgressMsg = 0x7f0d0060;
-        public static final int recognitionProgressView = 0x7f0d005f;
-        public static final int retry = 0x7f0d0063;
+        public static final int confirm = 0x7f0d0078;
+        public static final int confirmLayout = 0x7f0d0077;
+        public static final int recognitionProgressMsg = 0x7f0d0076;
+        public static final int recognitionProgressView = 0x7f0d0075;
+        public static final int retry = 0x7f0d0079;
     }
     public static final class layout {
-        public static final int speech_progress_layout = 0x7f040025;
+        public static final int speech_progress_layout = 0x7f040028;
     }
     public static final class string {
         public static final int app_name = 0x7f060011;

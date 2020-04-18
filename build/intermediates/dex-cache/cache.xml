@@ -7,8 +7,35 @@
         jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="a1008a6f3b0ec40a75a9d891a3e5399be4ee8e05">
+        sha1="7aa9c23a4cc9a7907d6ec366d462314ef9b6da20">
         <dex dex="C:\Users\rkushwaha\Documents\Github\DroidSpeech\app\build\intermediates\pre-dexed\debug\classes_807bce07b5fb3d8baa3c5e3b1c05ff63cc00d9f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rkushwaha\.android\build-cache\5c1d2f80e60d4af4aadea5f1ac6410a3214cff73\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b15c6ded887ad967e20bb335c1a121b253c04dce">
+        <dex dex="C:\Users\rkushwaha\Documents\Github\DroidSpeech\app\build\intermediates\pre-dexed\debug\classes_75cf42284912acc54c62e8b94a524411bcee8c69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rkushwaha\.android\build-cache\ef9f40b5c51982b92dac2e98f33d29e33588dcd5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="565f0eb14f70250a54baaeebf794b52cccc150e8">
+        <dex dex="C:\Users\rkushwaha\Documents\Github\DroidSpeech\app\build\intermediates\pre-dexed\debug\classes_f310412d0c74a8b62d3b803c05c5688aae96aadb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rkushwaha\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.1.3\bde0667d7414c16ed62d3cfe993cff7f9d732373\constraint-layout-solver-1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bde0667d7414c16ed62d3cfe993cff7f9d732373">
+        <dex dex="C:\Users\rkushwaha\Documents\Github\DroidSpeech\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.1.3_5d1c2542c00dc8eff146c79c1b5cbd8fe781189a.jar" />
     </item>
 
 </items>
