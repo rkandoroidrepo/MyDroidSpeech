@@ -740,7 +740,7 @@ public class DroidSpeech
                         if(valid)
                         {
                             // Getting the droid speech final result
-                            String droidSpeechFinalResult = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).get(0);
+                            final String droidSpeechFinalResult = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).get(0);
                             if(dsProperties.showRecognitionProgressView && dsProperties.oneStepResultVerify)
                             {
                                 // Saving the speech result
@@ -775,7 +775,8 @@ public class DroidSpeech
                                                 confirm.performClick();
                                             } else {
                                                 dsProperties.oneStepVerifySpeechResult = "Command not found";
-                                                retry.performClick();
+                                                droidSpeechListener.onDroidInvalidCommand(droidSpeechFinalResult);
+                                                //retry.performClick();
                                             }
                                         }
                                     }, 2000);
@@ -865,7 +866,10 @@ public class DroidSpeech
                                             // Closing droid speech operations, will be restarted when user clicks
                                             // cancel or confirm if applicable
                                             closeDroidSpeech();
-                                            retry.performClick();
+                                            //retry.performClick();
+                                            if(droidSpeechListener!=null){
+                                                droidSpeechListener.onDroidInvalidCommand(droidLiveSpeechResult);
+                                            }
                                         }
                                         else
                                         {

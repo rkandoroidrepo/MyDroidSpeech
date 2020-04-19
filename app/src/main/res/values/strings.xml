@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DroidSpeechExample</string>
+    <string name="app_name">AI Sample</string>
     <string name="final_speech_result">Final Speech Result:</string>
     <string name="no_data">---</string>
     <string name="start">Start</string>

@@ -20,12 +20,12 @@
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-xxxhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\abc_switch_track_mtrl_alpha.9.png",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-xxxhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\abc_tab_indicator_mtrl_alpha.9.png",
@@ -70,6 +70,14 @@
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\btn_stop.png",
         "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\drawable-xxxhdpi\\btn_stop.png"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_play_arrow_black_24dp.png",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_play_arrow_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_pause_black_24dp.png",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_pause_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_015.png",

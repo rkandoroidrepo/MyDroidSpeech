@@ -51,4 +51,6 @@ public interface OnDSListener
      * @param errorMsg The error message
      */
     void onDroidSpeechError(String errorMsg);
+
+    void onDroidInvalidCommand(String invalidCommand);
 }

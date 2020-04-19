@@ -72,6 +72,10 @@
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\abc_search_view.xml"
     },
     {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_launcher.xml",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\layout\\activity_launcher.xml"
+    },
+    {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
@@ -156,12 +160,12 @@
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_other_message.xml",
         "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\layout\\item_other_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",

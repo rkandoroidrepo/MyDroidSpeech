@@ -21,7 +21,7 @@ public final class R {
         public static final int retry = 0x7f0d0079;
     }
     public static final class layout {
-        public static final int speech_progress_layout = 0x7f040028;
+        public static final int speech_progress_layout = 0x7f040029;
     }
     public static final class string {
         public static final int app_name = 0x7f060011;

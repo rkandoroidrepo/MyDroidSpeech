@@ -156,8 +156,16 @@
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_play_arrow_black_24dp.png",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_play_arrow_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_pause_black_24dp.png",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_pause_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png",

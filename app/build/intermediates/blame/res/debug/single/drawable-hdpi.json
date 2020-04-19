@@ -40,8 +40,16 @@
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-hdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_play_arrow_black_24dp.png",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_play_arrow_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-hdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_pause_black_24dp.png",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_pause_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_list_selector_disabled_holo_light.9.png",
@@ -64,12 +72,12 @@
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-hdpi\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_start.png",
-        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\drawable-hdpi\\btn_start.png"
-    },
-    {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_cab_background_top_mtrl_alpha.9.png",
         "source": "C:\\Users\\rkushwaha\\.android\\build-cache\\bf13121323406fc021703ad66fd3379669f03119\\output\\res\\drawable-hdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_start.png",
+        "source": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\src\\main\\res\\drawable-hdpi\\btn_start.png"
     },
     {
         "merged": "C:\\Users\\rkushwaha\\Documents\\Github\\DroidSpeech\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_popup_background_mtrl_mult.9.png",
