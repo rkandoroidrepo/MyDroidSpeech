@@ -177,7 +177,13 @@ public class MainActivityWithBot extends Activity implements View.OnClickListene
     }
 
     private void answer(String command){
-        String answer = "Okay here is your data: \n"+
+        String str = "";
+        if(command.contains("last month")){
+            str = "last month average ";
+        }else if(command.contains("last week")){
+            str = "last week average ";
+        }
+        String answer = "Okay here is your "+str +"data: \n"+
                 "Calories 150\n"+
                 "Distance 5 kilometer\n"+
                 "Average speed: 25 kilometer per hour";
